@@ -60,28 +60,30 @@ map <Leader>s :SlimuxREPLSendLine<CR>
 vmap <Leader>s :SlimuxREPLSendSelection<CR>
 let g:slimux_select_from_current_window = 1
 
-augroup configgroup
-    autocmd!
-    autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
-    autocmd FileType txt setlocal shiftwidth=4 tabstop=4 expandtab
-    autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
-    autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
-    autocmd FileType scala setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType jade setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType sh setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType proto setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType text setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType r setlocal shiftwidth=2 tabstop=2 expandtab
-    autocmd FileType cmake setlocal shiftwidth=2 tabstop=2 expandtab
-    au BufRead,BufNewFile *.conf setlocal shiftwidth=2 tabstop=2 expandtab autoindent
-    autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
-
-
-augroup END
-
 " vim wiki
 set nocompatible
 filetype plugin on
 syntax on
+
+augroup configgroup
+    autocmd!
+    autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab ai
+    autocmd FileType txt setlocal shiftwidth=4 tabstop=4 expandtab ai
+    autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab ai
+    autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab ai
+    autocmd FileType scala setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType jade setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType sh setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType proto setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType text setlocal shiftwidth=2 tabstop=2 expandtab ai spell spelllang=en_ca
+    autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType r setlocal shiftwidth=2 tabstop=2 expandtab ai
+    autocmd FileType cmake setlocal shiftwidth=2 tabstop=2 expandtab ai
+    au BufRead,BufNewFile *.conf setlocal shiftwidth=2 tabstop=2 expandtab autoindent
+    autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab ai
+
+
+
+augroup END
+
