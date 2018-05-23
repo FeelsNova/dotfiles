@@ -24,16 +24,8 @@ set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 
-" space open/closes folds
-nnoremap <space> za
-set foldmethod=indent   " fold based on indent level
 
-" move vertically by visual line
-nnoremap j gj
-nnoremap k gk
 
-" highlight last inserted text
-nnoremap gV `[v`]
 
 call pathogen#infect()                      " use pathogen
 
@@ -86,4 +78,6 @@ augroup configgroup
 
 
 augroup END
+
+let r_indent_align_args = 0
 
