@@ -77,3 +77,9 @@ if !has("gui_running")
     set t_Co=256
     set term=screen-256color
 endif
+
+let g:ctrlp_max_files=0 
+let g:ctrlp_max_depth=40
+let g:ctrlp_working_path_mode = ""
+
+vnoremap // y/<C-R>"<CR>
