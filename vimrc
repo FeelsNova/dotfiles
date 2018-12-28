@@ -72,6 +72,8 @@ augroup configgroup
 
 augroup END
 
+let r_indent_align_args = 0
+
 " use 256 colors in terminal
 if !has("gui_running")
     set t_Co=256
