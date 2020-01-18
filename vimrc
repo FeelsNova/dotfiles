@@ -50,7 +50,11 @@ set nocompatible
 filetype plugin on
 syntax on
 
-augroup configgroup
+" FileType is the event when filetype option has been set
+" pattern is matched against filetype
+" grouping autocommands to easily turn off
+augroup vimrc
+    " clear previous auto commands
     autocmd!
     autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab ai
     autocmd FileType txt setlocal shiftwidth=4 tabstop=4 expandtab ai
@@ -65,7 +69,7 @@ augroup configgroup
     autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType r setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType cmake setlocal shiftwidth=2 tabstop=2 expandtab ai
-    au BufRead,BufNewFile *.conf setlocal shiftwidth=2 tabstop=2 expandtab autoindent
+    autocmd BufRead,BufNewFile *.conf setlocal shiftwidth=2 tabstop=2 expandtab autoindent
     autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab ai
 
 
@@ -80,8 +84,9 @@ if !has("gui_running")
     set term=screen-256color
 endif
 
-let g:ctrlp_max_files=0 
-let g:ctrlp_max_depth=40
-let g:ctrlp_working_path_mode = ""
-
+" let g:ctrlp_max_files=0 
+" let g:ctrlp_max_depth=40
+" let g:ctrlp_working_path_mode = ""
+" 
+" search for text selected in visual mode
 vnoremap // y/<C-R>"<CR>
