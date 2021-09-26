@@ -66,6 +66,7 @@ augroup vimrc
     autocmd FileType sh setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType proto setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType text setlocal shiftwidth=2 tabstop=2 expandtab ai spell spelllang=en_ca
+    autocmd FileType tex setlocal shiftwidth=2 tabstop=2 expandtab ai spell spelllang=en_ca
     autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType r setlocal shiftwidth=2 tabstop=2 expandtab ai
     autocmd FileType cmake setlocal shiftwidth=2 tabstop=2 expandtab ai
