@@ -91,3 +91,6 @@ endif
 " 
 " search for text selected in visual mode
 vnoremap // y/<C-R>"<CR>
+
+set exrc
+set secure
