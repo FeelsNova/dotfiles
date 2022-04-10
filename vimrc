@@ -1,6 +1,6 @@
 " https://dougblack.io/words/a-good-vimrc.html
 
-colorscheme badwolf         " awesome colorscheme
+"colorscheme badwolf         " awesome colorscheme
 syntax enable           " enable syntax processing
 set tabstop=4       " number of visual spaces per TAB
 
@@ -21,6 +21,10 @@ set hlsearch            " highlight match
 nnoremap <leader><space> :nohlsearch<CR>
 
 call pathogen#infect()                      " use pathogen
+
+
+colorscheme dracula         " awesome colorscheme
+
 
 " allows cursor change in tmux mode
 " if exists('$TMUX')
