@@ -98,3 +98,11 @@ vnoremap // y/<C-R>"<CR>
 
 set exrc
 set secure
+
+
+" packadd vim-lsp
+" packadd vim-lsp-settings
+" packadd asyncomplete
+" packadd asyncomplete-lsp.vim
+
+
